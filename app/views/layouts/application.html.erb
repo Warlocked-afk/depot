@@ -22,6 +22,7 @@
       <li><a href="/news">News</a></li>
       <li><a href="/contact">Contact</a></li>
     </ul>
+    <p><%= l Time.now %></p>
   </nav>
     <%= content_tag :main, class: controller.controller_name do %>
       <%= yield %>
