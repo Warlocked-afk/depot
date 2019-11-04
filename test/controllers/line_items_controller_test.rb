@@ -17,7 +17,7 @@ class LineItemsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create line_item" do
       assert_difference('LineItem.count') do
-      post :create, product_id: products(:ruby)
+      post :create, product_id: products(:"1 × Programming Ruby 1.9 & 2.0")
     end
 
     assert_redirected_to line_item_url(LineItem.last)
