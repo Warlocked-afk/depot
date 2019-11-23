@@ -12,3 +12,6 @@
 
 <%= link_to 'Edit', edit_line_item_path(@line_item) %> |
 <%= link_to 'Back', line_items_path %>
+
+<%= button_to 'Add to Cart', line_items_path(product_id: product),
+  remote: true %>
